@@ -22,11 +22,7 @@ export default function Footer() {
                 <Image src="/assets/gw-logo.png" width={158} height={38} />
               </a>
             </h6>
-<<<<<<< HEAD
             <div className="flex flex-row space-x-4 pb-4 items-center justify-center md:justify-start md:pl-5">
-=======
-            <div className="flex flex-row space-x-4 items-center justify-center md:justify-start md:pl-5">
->>>>>>> c0572530c53126ce8d2f3058ea36bee235c419be
               <a href="#!" className="text-white text-sm">
                 <InstagramIcon />
               </a>
