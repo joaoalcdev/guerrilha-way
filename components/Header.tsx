@@ -8,7 +8,7 @@ export default function Header() {
           <a href="#" className="flex items-center">
             <Image src="/assets/gw-logo.png" width={158} height={38} className="mr-3 h-6 sm:h-9" alt="Guerrilha Way" />
           </a>
-          <div className="flex items-center md:order-2">
+          <div className="flex items-center">
             <div className="flex mr-3">
               <div className="hidden relative mr-3 md:mr-0 md:block">
                 <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -27,7 +27,7 @@ export default function Header() {
               {/* <img className="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="" /> */}
               <div className="relative">
                 <div>
-                  <button
+                  {/* <button
                     type="button"
                     className="
                     duration-[0.2s]
@@ -51,7 +51,7 @@ export default function Header() {
                       <Image src="/assets/avatar.png" width={64} height={64} className="rounded-full" alt="Avatar" />
                     </div>
                     <span className="sr-only">Abrir menu de usuário</span>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </button>
