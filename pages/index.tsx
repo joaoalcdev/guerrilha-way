@@ -5,6 +5,8 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import HomeSection from '../components/HomeSection'
 
+import Data from '../data/data.json';
+
 const Home: NextPage = () => {
   return (
     <>
@@ -98,6 +100,16 @@ const Home: NextPage = () => {
               </div>
             </section>
           </main>
+          {/* <div className="flex-row text-justify justify-center items-center text-white">
+            {
+              Data.map((post) => (
+                <div className="text-left border border-white m-2" key={post.id}>
+                  <p>{post.title}</p>
+                  <p>{post.description}</p>
+                </div>
+              ))
+            }
+          </div> */}
         </div>
         <Footer />
       </div>
