@@ -100,7 +100,7 @@ const Home: NextPage = () => {
               </div>
             </section>
           </main>
-          {/* <div className="flex-row text-justify justify-center items-center text-white">
+          <div className="flex-row text-justify justify-center items-center text-white">
             {
               Data.map((post) => (
                 <div className="text-left border border-white m-2" key={post.id}>
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
                 </div>
               ))
             }
-          </div> */}
+          </div>
         </div>
         <Footer />
       </div>
