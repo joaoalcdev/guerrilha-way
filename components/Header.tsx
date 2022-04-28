@@ -1,20 +1,21 @@
 import Image from 'next/image';
 import Search from './Search';
+import NotifyIcon from '../components/icons/Notify';
 
 export default function Header() {
   return (
     <>
       <nav className="bg-[#131212] border-gray-200 px-2 sm:px-4 py-8 mb-1">
-        <div className="container flex flex-wrap justify-between items-center px-8 md:px-32">
-          <a href="#" className="flex items-center">
+        <div className="container flex flex-wrap justify-between items-center px-2 md:px-32">
+          <a href="#" className="w-2/5 sm:w-1/2 flex items-center">
             <Image src="/assets/gw-logo.png" width={158} height={38} className="mr-3 h-6 sm:h-9" alt="Guerrilha Way" />
           </a>
-          <div className="flex w-1/2 items-center justify-end">
+          <div className="flex w-1/4 sm:w-1/2 items-center justify-end">
             <div className="flex mr-3">
               <Search />
             </div>
             {/* user profile */}
-            <button type="button" className="flex text-sm rounded-full space-x-2 md:mr-0">
+            <div className="flex items-center text-sm rounded-full space-x-2 md:mr-0">
               <button
                 type="button"
                 className="
@@ -30,8 +31,8 @@ export default function Header() {
                     focus:ring-[#ee2058]
                   "
               >
-                <div className="h-8 w-8 rounded-full z-[1]">
-                  <Image src="/assets/avatar.png" width={64} height={64} className="rounded-full" alt="Avatar" />
+                <div className="flex text-[#ee2058] h-8 w-8 items-center justify-center rounded-full z-[1]">
+                  <NotifyIcon />
                 </div>
               </button>
               <button
@@ -53,7 +54,7 @@ export default function Header() {
                   <Image src="/assets/avatar.png" width={64} height={64} className="rounded-full" alt="Avatar" />
                 </div>
               </button>
-            </button>
+            </div>
           </div>
         </div>
       </nav>
