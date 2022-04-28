@@ -11,7 +11,6 @@ export default function Search() {
         </div>
         <input
           type="text"
-          id="email-address-icon"
           className="
             duration-200
             flex
