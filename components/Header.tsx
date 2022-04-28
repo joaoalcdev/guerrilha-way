@@ -5,13 +5,13 @@ import NotifyIcon from '../components/icons/Notify';
 export default function Header() {
   return (
     <>
-      <nav className="bg-[#131212] border-gray-200 px-2 sm:px-4 py-8 mb-1">
-        <div className="container flex flex-wrap justify-between items-center px-2 md:px-32">
-          <a href="#" className="w-2/5 sm:w-1/2 flex items-center">
+      <nav className="bg-[#131212] border-gray-200 px-2 sm:px-4 py-8 mb-1 items-center justify-center flex">
+        <div className="container flex flex-wrap justify-between items-center px-2 md:px-20">
+          <a href="#" className="w-2/5 sm:w-1/2 flex items-center px-2 md:px-0">
             <Image src="/assets/gw-logo.png" width={158} height={38} className="mr-3 h-6 sm:h-9" alt="Guerrilha Way" />
           </a>
-          <div className="flex w-1/4 sm:w-1/2 items-center justify-end">
-            <div className="flex mr-3">
+          <div className="flex w-1/4 sm:w-1/2 items-center justify-end space-x-2">
+            <div className="flex">
               <Search />
             </div>
             {/* user profile */}
