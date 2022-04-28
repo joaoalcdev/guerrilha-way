@@ -35,13 +35,13 @@ export default function HomeSection() {
                     </p>
                     <p className="flex flex-row font-light text-md text-left md:text-left h-auto">
                       <span className="font-bold">
-                        Canal do Telegram só para GW’s:</span> seu canal é <a href="#!"
+                        Canal do Telegram só para GW’s:</span> seu canal é <a href="http://t.me/joinchat/AAAAAFirWTdR1Px3WQn-TQ"
                           target="_blank"
                           rel="noreferrer noopener">
                         <span className="pl-1 font-bold text-[#ee2058]"> aqui </span></a>!
                     </p>
                     <p className="flex flex-row font-light text-md text-left md:text-left h-auto">
-                      <a href="#!"
+                      <a href="https://app.guerrilhaway.com.br/aula/993"
                         target="_blank"
                         className="
                             transition ease-in-out duration-300	 
