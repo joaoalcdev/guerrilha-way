@@ -18,36 +18,36 @@ export default function Footer() {
               justify-center
               md:justify-start
             ">
-              <a href="#!" target="_blank" rel="noreferrer noopener" className="text-white text-sm">
+              <a href="#" rel="noreferrer noopener" className="text-white text-sm">
                 <Image src="/assets/gw-logo.png" width={158} height={38} />
               </a>
             </h6>
             <div className="flex flex-row space-x-4 pb-8 items-center justify-center md:justify-start md:pl-5">
-              <a href="#!" target="_blank" rel="noreferrer noopener" className="text-white text-sm">
+              <a href="https://www.instagram.com/guerrilhaway/" target="_blank" rel="noreferrer noopener" className="text-white text-sm">
                 <InstagramIcon />
               </a>
-              <a href="#!" target="_blank" rel="noreferrer noopener" className="text-white text-sm">
+              <a href="https://www.facebook.com/marsili.italo" target="_blank" rel="noreferrer noopener" className="text-white text-sm">
                 <FacebookIcon />
               </a>
-              <a href="#!" target="_blank" rel="noreferrer noopener" className="text-white text-sm">
+              <a href="https://www.youtube.com/user/italomarsili" target="_blank" rel="noreferrer noopener" className="text-white text-sm">
                 <YoutubeIcon />
               </a>
             </div>
           </div>
           <div className="">
             <p className="mb-4">
-              <a href="#!" target="_blank" rel="noreferrer noopener" className="text-white text-sm">Termos de uso</a>
+              <a href="https://app.guerrilhaway.com.br/termos-de-uso" target="_blank" rel="noreferrer noopener" className="text-white text-sm">Termos de uso</a>
             </p>
             <p className="mb-4">
-              <a href="#!" target="_blank" rel="noreferrer noopener" className="text-white text-sm">Privacidade</a>
+              <a href="https://app.guerrilhaway.com.br/politica-de-privacidade" target="_blank" rel="noreferrer noopener" className="text-white text-sm">Privacidade</a>
             </p>
           </div>
           <div className="">
             <p className="mb-4">
-              <a href="#!" target="_blank" rel="noreferrer noopener" className="text-white text-sm">Ajuda</a>
+              <a href="#" target="_blank" rel="noreferrer noopener" className="text-white text-sm">Ajuda</a>
             </p>
             <p className="mb-4">
-              <a href="#!" target="_blank" rel="noreferrer noopener" className="text-white text-sm">Entre em contato</a>
+              <a href="#" target="_blank" rel="noreferrer noopener" className="text-white text-sm">Entre em contato</a>
             </p>
           </div>
           <div className="w-full flex-col">
