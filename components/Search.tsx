@@ -23,21 +23,23 @@ export default function Search() {
           placeholder="Procurar por..."
           onChange={event => setQuery(event.target.value)}
         />
-        {
-          Data.filter(post => {
-            if (query === '') {
-              return post;
-            } else if (post.title.toLowerCase().includes(query.toLowerCase())) {
-              return post;
-            }
-          }).map((post, index) => (
-            <div key={index}>
-              <p>{post.title}</p>
-              <p>{post.description}</p>
-              <p>{post.id}</p>
-            </div>
-          ))
-        }
+        <div className="text-white">
+          {
+            Data.filter(post => {
+              if (query === '') {
+                return post;
+              } else if (post.title.toLowerCase().includes(query.toLowerCase())) {
+                return post;
+              }
+            }).map((post, index) => (
+              <div key={index}>
+                <a href=""><p>{post.title}</p></a>
+                <p>{post.description}</p>
+                <p>{post.id}</p>
+              </div>
+            ))
+          }
+        </div>
       </div>
     </>
   )

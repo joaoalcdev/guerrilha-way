@@ -4,7 +4,7 @@ export default function CardSection() {
     <>
       <div className="flex flex-col items-center justify-center bg-[#171717f8]">
         <main className="flex w-full flex-col items-center justify-center md:px-32 px-10">
-          <section className="flex w-full justify-center pt-4 text-left lg:text-left text-white text-sm">
+          <section className="flex w-full justify-center text-left lg:text-left text-white text-sm">
             {/* 1st line cards */}
             <div className="py-10 text-center md:text-left">
               <div className="flex flex-row items-center space-x-2 pb-6">
@@ -12,15 +12,15 @@ export default function CardSection() {
                   <p className="flex border-2 border-white rounded-full p-1 mr-2">40</p> GW Abril – 2022
                 </h1>
               </div>
-              <div className="space-y-2 grid grid-1 md:grid-cols-2 lg:grid-cols-4 md:gap-5">
+              <div className="space-y-2 md:space-y-0 grid grid-1 md:grid-cols-2 lg:grid-cols-4 md:gap-5">
                 <div className="">
                   <p className="">
                     <div className="flex flex-row">
-                      <a href="https://app.guerrilhaway.com.br/aula/993"
+                      <a href="https://app.guerrilhaway.com.br/aula/992"
                         target="_blank"
                         rel="noreferrer noopener">
                         <Image
-                          src="/assets/thumbnail-card.jpg"
+                          src="/assets/thumbnail-card02.jpg"
                           width={380}
                           height={530}
                           className="px-0 mx-0 rounded-sm" />
@@ -80,7 +80,7 @@ export default function CardSection() {
                   <p className="flex border-2 border-white rounded-full p-1 mr-2">39</p> GW Março – 2022
                 </h1>
               </div>
-              <div className="space-y-2 grid grid-1 md:grid-cols-2 lg:grid-cols-4 md:gap-5">
+              <div className="space-y-2 md:space-y-0 grid grid-1 md:grid-cols-2 lg:grid-cols-4 md:gap-5">
                 <div className="">
                   <p className="">
                     <div className="flex flex-row">
