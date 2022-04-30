@@ -32,7 +32,7 @@ export default function Search() {
           />
         </form>
         <div className="">
-          <ul className="pt-1 px-1 absolute w-full space-y-0 rounded-lg overflow-y-auto h-52 mt-2">
+          <ul className="pt-1 px-1 absolute w-full space-y-0 rounded-lg overflow-y-auto md:overflow-y-auto h-60 mt-2">
             {
               Data.filter(post => {
                 if (query === '') {
@@ -43,26 +43,26 @@ export default function Search() {
               }).map((post, index) => (
                 <div key={index}
                   className="rounded-sm">
-                  <div className="bg-[#131212] hover:bg-[#101010] duration-300 hover:drop-shadow-[0px_0px_3px_#2f2f2f90] rounded-lg space-y-2 px-2 mb-1">
+                  <div className="bg-[#363638] hover:bg-[#101010] duration-300 hover:drop-shadow-[0px_0px_3px_#2f2f2f90] rounded-0 space-y-0 px-2">
                     <div className="flex-row flex">
                       <div className="flex py-3 px-0 flex-col justify-center items-center text-left">
                         <a href={post.link} className="flex justify-center items-center">
                           <h1 className="text-gray-400 text-xs pb-0">
                             Título: <span className="text-white text-xs">{post.title}</span>
                             <p className="text-gray-500">Semana #{post.id}</p>
+                            <div className="w-full flex justify-start pb-1 text-center text-white text-xs">
+                              <a href={post.link} className="duration-300 w-1/3 sm:w-1/3 md:w-1/4 flex rounded-xs px-4 py-1 uppercase justify-center text-center hover:bg-[#a71834] bg-[#ee2850] flex-row rounded-md ">ler</a>
+                            </div>
                           </h1>
                           <img className="rounded-md h-18 w-1/3 md:w-1/4" src={post.thumbnail} />
                         </a>
                         <div className="mr-0 sm:mr-16 md:mr-0  mt-1 items-center justify-end flex w-full pb-1 text-left text-white text-xs">
                           {/* <p className="flex flex-row w-1/2">Data: {post.date}</p> */}
-                          <div className="w-full flex justify-end pb-1 text-center text-white text-xs">
-                            <a href={post.link} className="duration-300 w-1/3 sm:w-1/3 md:w-1/4 flex rounded-xs px-4 py-1 uppercase justify-center text-center hover:bg-[#a71834] bg-[#ee2850] flex-row rounded-md ">ler</a>
-                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="mt-2 mb-2 border-[0.1px] border-gray-600"></div>
+                  <div className="mt-0 mb-0 border-[0.1px] border-gray-600"></div>
                 </div>
               ))
             }
