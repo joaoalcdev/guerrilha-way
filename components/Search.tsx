@@ -32,7 +32,7 @@ export default function Search() {
           />
         </form>
         <div className="mr-28 md:mr-0">
-          <ul className="absolute w-full space-y-0 overflow-y-auto h-52 mt-2">
+          <ul className="pt-1 px-1 absolute w-full space-y-0 rounded-lg overflow-y-auto h-52 mt-2">
             {
               Data.filter(post => {
                 if (query === '') {
@@ -43,7 +43,7 @@ export default function Search() {
               }).map((post, index) => (
                 <div key={index}
                   className="rounded-sm">
-                  <div className="bg-[#131212] border-2 border-[#ee2058] rounded-lg space-y-2 mb-1">
+                  <div className="bg-[#131212] duration-300 hover:border-[#fa0f4e] hover:drop-shadow-[0px_0px_3px_#fa0f4e90] border-2 border-[#ee2058] rounded-lg space-y-2 mb-1">
                     <div className="flex-row flex">
                       <div className="flex py-3 px-2 flex-col justify-center items-center text-left">
                         <a href={post.link} className="flex justify-center items-center">
@@ -56,7 +56,7 @@ export default function Search() {
                         <div className="mt-1 items-center justify-end flex w-full pb-1 text-left text-white text-xs">
                           {/* <p className="flex flex-row w-1/2">Data: {post.date}</p> */}
                           {/* <div className="w-full pb-1 text-center text-white text-xs"> */}
-                          <a href={post.link} className="w-1/4 flex rounded-xs px-4 py-1 uppercase justify-center text-center hover:bg-[#a71834] bg-[#ee2850] flex-row rounded-md ">ler</a>
+                          <a href={post.link} className="duration-300 w-1/4 flex rounded-xs px-4 py-1 uppercase justify-center text-center hover:bg-[#a71834] bg-[#ee2850] flex-row rounded-md ">ler</a>
                           {/* </div> */}
                         </div>
                       </div>
