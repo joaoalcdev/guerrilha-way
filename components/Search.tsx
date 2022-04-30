@@ -5,7 +5,7 @@ export default function Search() {
   const [query, setQuery] = useState("");
   return (
     <>
-      <div className="block visible relative md:mr-0 md:block">
+      <div className="block visible relative md:mr-0">
         <form className="w-full md:w-full" action="/" method="get">
           <button className="z-14 flex flex-col w-full" type="submit">
             <div className="flex justify-center absolute top-0 pt-[10px] md:pt-[9px] left-0 items-center px-3 pointer-events-none">
@@ -31,7 +31,7 @@ export default function Search() {
             onChange={event => setQuery(event.target.value)}
           />
         </form>
-        <div className="mr-28 md:mr-0">
+        <div className="">
           <ul className="pt-1 px-1 absolute w-full space-y-0 rounded-lg overflow-y-auto h-52 mt-2">
             {
               Data.filter(post => {
@@ -43,25 +43,26 @@ export default function Search() {
               }).map((post, index) => (
                 <div key={index}
                   className="rounded-sm">
-                  <div className="bg-[#131212] duration-300 hover:border-[#fa0f4e] hover:drop-shadow-[0px_0px_3px_#fa0f4e90] border-2 border-[#ee2058] rounded-lg space-y-2 mb-1">
+                  <div className="bg-[#131212] hover:bg-[#101010] duration-300 hover:drop-shadow-[0px_0px_3px_#2f2f2f90] rounded-lg space-y-2 px-2 mb-1">
                     <div className="flex-row flex">
-                      <div className="flex py-3 px-2 flex-col justify-center items-center text-left">
+                      <div className="flex py-3 px-0 flex-col justify-center items-center text-left">
                         <a href={post.link} className="flex justify-center items-center">
                           <h1 className="text-gray-400 text-xs pb-0">
                             Título: <span className="text-white text-xs">{post.title}</span>
                             <p className="text-gray-500">Semana #{post.id}</p>
                           </h1>
-                          <img className="rounded-md h-18 w-1/4" src={post.thumbnail} />
+                          <img className="rounded-md h-18 w-1/3 md:w-1/4" src={post.thumbnail} />
                         </a>
-                        <div className="mt-1 items-center justify-end flex w-full pb-1 text-left text-white text-xs">
+                        <div className="mr-0 sm:mr-16 md:mr-0  mt-1 items-center justify-end flex w-full pb-1 text-left text-white text-xs">
                           {/* <p className="flex flex-row w-1/2">Data: {post.date}</p> */}
-                          {/* <div className="w-full pb-1 text-center text-white text-xs"> */}
-                          <a href={post.link} className="duration-300 w-1/4 flex rounded-xs px-4 py-1 uppercase justify-center text-center hover:bg-[#a71834] bg-[#ee2850] flex-row rounded-md ">ler</a>
-                          {/* </div> */}
+                          <div className="w-full flex justify-end pb-1 text-center text-white text-xs">
+                            <a href={post.link} className="duration-300 w-1/3 sm:w-1/3 md:w-1/4 flex rounded-xs px-4 py-1 uppercase justify-center text-center hover:bg-[#a71834] bg-[#ee2850] flex-row rounded-md ">ler</a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div className="mt-2 mb-2 border-[0.1px] border-gray-600"></div>
                 </div>
               ))
             }
