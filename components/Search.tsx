@@ -17,6 +17,7 @@ export default function Search() {
           <input
             type="text"
             name="s"
+            autoComplete="off"
             className="
             duration-200
             flex
