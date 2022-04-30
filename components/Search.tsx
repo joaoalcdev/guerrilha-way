@@ -3,6 +3,9 @@ import { useState } from 'react';
 
 export default function Search() {
   const [query, setQuery] = useState("");
+  const selectAllText = (event: any) => {
+    event.target.select();
+  };
   return (
     <>
       <div className="block visible relative md:mr-0">
@@ -16,7 +19,7 @@ export default function Search() {
           </button>
           <input
             type="text"
-            name="s"
+            name="search-bar"
             autoComplete="off"
             className="
             duration-200
@@ -24,21 +27,26 @@ export default function Search() {
             p-2 pl-8 sm:pt-auto sm:pl-10 w-full rounded-lg items-center
             text-white placeholder-gray-400 sm:text-sm
             bg-[#131212]
+            focus:select-all
             focus:outline outline-2 outline-offset-0 outline-[#ee2057c7]
             border-gray-600 border focus:border focus:border-[#ee2058]
           "
             placeholder="Buscar por..."
+            onFocus={event => setQuery(event.target.value) != undefined ? setQuery(event.target.value) : setQuery(event.target.value)}
+            onClick={selectAllText}
+            // onClick={event => event.target.select(setQuery(event.target.value))}
+            onBlur={event => setQuery(event.target.value) != undefined ? setQuery(event.target.value) : setQuery("")}
             onChange={event => setQuery(event.target.value)}
           />
         </form>
-        <div className="">
+        <div className="" id="search-bar">
           <ul className="pt-1 px-1 absolute w-full space-y-0 rounded-lg overflow-y-auto md:overflow-y-auto h-60 mt-2">
             {
               Data.filter(post => {
                 if (query === '') {
                   return false;
                 } else if (post.title.toLowerCase().includes(query.toLowerCase()) || post.description.toLowerCase().includes(query.toLowerCase()) || (post.id && post.id.toLowerCase().includes(query.toLowerCase())) || (post.date && post.date.toLowerCase().includes(query.toLowerCase())) || (post.link && post.link.toLowerCase().includes(query.toLowerCase()))) {
-                  return post;
+                  return true;
                 }
               }).map((post, index) => (
                 <div key={index}

@@ -11,7 +11,7 @@ export default function HomeSection() {
               <div key={index} className="flex flex-col items-center justify-center text-center text-white space-y-12">
                 <h1 className="font-bold text-3xl uppercase">esta semana</h1>
                 <p className="font-light text-md">
-                  {card.title}
+                  GW Semana #{card.id} - {card.date}: {card.title}
                 </p>
                 <div className="flex flex-row items-center justify-center w-full">
                   <div className="flex flex-col md:flex-row md:space-x-28 space-y-12 md:space-y-0">
