@@ -42,7 +42,7 @@ export default function Search() {
               }).map((post, index) => (
                 <div key={index}
                   className="rounded-sm">
-                  <div className="bg-[#131212]">
+                  <div className="bg-[#131212] border-2 border-[#ee2058] rounded-lg space-y-2 mb-1">
                     <div className="flex-row flex">
                       <div className="flex py-3 px-2 flex-col justify-center items-center text-left">
                         <a href={post.link} className="flex justify-center items-center">
@@ -50,15 +50,14 @@ export default function Search() {
                             Título: <span className="text-white text-xs">{post.title}</span>
                             <p className="text-gray-500">Semana #{post.id}</p>
                           </h1>
-                          <img className="h-18 w-1/4" src={post.thumbnail} />
+                          <img className="rounded-md h-18 w-1/4" src={post.thumbnail} />
                         </a>
                         <div className="mt-1 items-center justify-end flex w-full pb-1 text-left text-white text-xs">
                           {/* <p className="flex flex-row w-1/2">Data: {post.date}</p> */}
                           {/* <div className="w-full pb-1 text-center text-white text-xs"> */}
-                          <a href={post.link} className="w-1/4 flex rounded-xs px-4 py-1 uppercase justify-center text-center hover:bg-[#a71834] bg-[#ee2850] flex-row">ler</a>
+                          <a href={post.link} className="w-1/4 flex rounded-xs px-4 py-1 uppercase justify-center text-center hover:bg-[#a71834] bg-[#ee2850] flex-row rounded-md ">ler</a>
                           {/* </div> */}
                         </div>
-                        <div className="pb-2 w-full border-b-2 border-gray-600"></div>
                       </div>
                     </div>
                   </div>

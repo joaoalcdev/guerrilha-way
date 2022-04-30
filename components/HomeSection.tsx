@@ -17,7 +17,7 @@ export default function HomeSection() {
                       target="_blank"
                       rel="noreferrer noopener">
                       <Image
-                        src="/assets/thumbnail-card.jpg"
+                        src="/assets/thumbnail-card01.jpg"
                         width={470}
                         height={650}
                         className="px-0 mx-0" />
