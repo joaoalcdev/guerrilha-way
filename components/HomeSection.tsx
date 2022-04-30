@@ -2,8 +2,8 @@ import Image from 'next/image'
 export default function HomeSection() {
   return (
     <>
-      <div className="min-h-screen flex flex-col items-center justify-center bg-[#151414]">
-        <main className="flex w-full flex-col items-center justify-center px-8 md:px-32">
+      <div className="font-RubikSerif min-h-screen flex flex-col items-center justify-center bg-[#131212]">
+        <main className="flex w-full flex-col items-center justify-center px-8 sm:px-20 md:px-32">
           <section className="flex w-full flex-col items-center justify-center text-center py-14">
             <div className="flex flex-col items-center justify-center text-center text-white space-y-12">
               <h1 className="font-bold text-3xl uppercase">esta semana</h1>
@@ -34,11 +34,11 @@ export default function HomeSection() {
                       <span className="font-bold">Pendure Isto:</span> um exercício fundamental para a sua semana!
                     </p>
                     <p className="flex flex-row font-light text-md text-left md:text-left h-auto">
-                      <span className="font-bold">
-                        Canal do Telegram só para GW’s:</span> seu canal é <a href="http://t.me/joinchat/AAAAAFirWTdR1Px3WQn-TQ"
+                      <span className="font-bold pr-1">
+                        Canal do Telegram só para GW’s:</span>seu canal é <a href="http://t.me/joinchat/AAAAAFirWTdR1Px3WQn-TQ"
                           target="_blank"
                           rel="noreferrer noopener">
-                        <span className="pl-1 font-bold text-[#ee2058]"> aqui </span></a>!
+                        <span className="flex flex-row pl-1 font-bold text-[#ee2058]"> aqui </span></a>!
                     </p>
                     <p className="flex flex-row font-light text-md text-left md:text-left h-auto">
                       <a href="https://app.guerrilhaway.com.br/aula/993"
@@ -46,7 +46,7 @@ export default function HomeSection() {
                         className="
                             transition ease-in-out duration-300	 
                             px-12 py-2
-                            font-bold uppercase 
+                            text-sm md:text-center md:text-lg font-bold uppercase 
                             border rounded-lg border-[#ee2058] 
                             bg-transparent hover:bg-[#ee2058]
                             text-[#ee2058] hover:text-white

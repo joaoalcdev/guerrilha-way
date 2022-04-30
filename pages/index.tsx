@@ -6,8 +6,6 @@ import Footer from '../components/Footer'
 import HomeSection from '../components/HomeSection'
 import CardSection from '../components/CardSection'
 
-import Data from '../data/data.json';
-
 const Home: NextPage = () => {
   return (
     <>
@@ -15,7 +13,7 @@ const Home: NextPage = () => {
         <title>Guerrilha Way</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-[#151414de]">
+      <div className="bg-[#0e0d0d]">
         <Header />
         <HomeSection />
         <CardSection />
