@@ -53,7 +53,7 @@ export default function Header() {
                         hover:bg-color-[#343434]
                         border-[#ee2058]
                         ring-offset-[#16161B]
-                        ring-[#ee2058] h-10 w-10 p-0 rounded-full z-[1] bg-[#16161B]">
+                        ring-[#ee2058] h-8 w-8 p-0 rounded-full z-[1] bg-[#16161B]">
                           <Image src="/assets/avatar.jpeg" width={64} height={64} className="rounded-full" alt="Avatar" />
                         </div>
                         <svg className="w-5 h-5 ml-1 -mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
