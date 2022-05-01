@@ -1,12 +1,14 @@
 import Image from 'next/image'
 import Data from '../data/data.json'
+// import Banner from "https://framer.com/m/Banner-xjW9.js"
 export default function HomeSection() {
 
   return (
     <>
       {Data.slice(0, 1).map((card, index) => (
         <div className="font-RubikSerif min-h-screen flex flex-col items-center justify-center bg-[#131212]">
-          <main className="flex w-full flex-col items-center justify-center px-8 sm:px-20 lg:px-32">
+          <main className="overflow-x-hidden flex w-full flex-col items-center justify-center px-8 sm:px-20 lg:px-32">
+            {/* <Banner /> */}
             <section className="flex w-full flex-col items-center justify-center text-center py-14">
               <div key={index} className="flex flex-col items-center justify-center text-center text-white space-y-12">
                 <h1 className="font-bold text-3xl uppercase">esta semana</h1>

@@ -40,7 +40,7 @@ export default function Search() {
           />
         </form>
         <div className="" id="search-bar">
-          <ul className="pt-1 px-1 absolute w-full space-y-0 rounded-lg overflow-y-auto md:overflow-y-auto h-60 mt-2">
+          <ul className="z-40 pt-1 px-1 absolute w-full space-y-0 rounded-lg overflow-y-auto md:overflow-y-auto h-60 mt-2">
             {
               Data.filter(post => {
                 if (query === '') {
