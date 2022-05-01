@@ -51,7 +51,7 @@ export default function HomeSection() {
                           className="
                             transition ease-in-out duration-300	 
                             px-12 py-2
-                            text-sm lg:text-center lg:text-lg font-bold uppercase 
+                            text-sm lg:text-center lg:text-md font-bold uppercase 
                             border rounded-lg border-[#ee2058] 
                             bg-transparent hover:bg-[#ee2058]
                             text-[#ee2058] hover:text-white

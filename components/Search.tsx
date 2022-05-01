@@ -51,23 +51,16 @@ export default function Search() {
               }).map((post, index) => (
                 <div key={index}
                   className="rounded-sm">
-                  <div className="bg-[#363638] hover:bg-[#101010] duration-300 hover:drop-shadow-[0px_0px_3px_#2f2f2f90] rounded-0 space-y-0 ">
+                  <div className="bg-[#1f1f20] hover:bg-[#101010] duration-300 hover:drop-shadow-[0px_0px_3px_#2f2f2f90] rounded-0 space-y-0">
                     <div className="flex-row flex">
-                      <div className="flex py-3 px-0 flex-col justify-center items-center text-left">
-                        <a href={post.link} className="flex justify-center items-start">
-                          <div className="text-gray-400 space-y-1 space-x-2 text-xs pb-0">
-                            <p className="hidden flex-wrap"></p>
-                            <p className="">Título: <p className="flex flex-nowrap w-full text-white text-xs">{post.title}</p></p>
-                            <p className="">Descrição: <p className="overflow-hidden h-8 w-full text-white text-xs">{post.description}</p></p>
-                            <p className="text-gray-500">Semana #{post.id}</p>
-                            {/* <div className="mr-0 sm:mr-16 md:mr-0 mt-1 items-end justify-center flex w-full pb-1 text-right text-white text-xs"> */}
-                            {/* <p className="flex flex-row w-full">Data: {post.date}</p> */}
-                            {/* </div> */}
-                            {/* <div className="w-full flex relative justify-start items-center text-center text-white text-xs"> */}
-                            <a href={post.link} className="duration-300 w-1/3 sm:w-1/3 md:w-1/2 lg:w-1/4 flex rounded-xs px-4 py-1 uppercase justify-center text-center hover:bg-[#a71834] bg-[#ee2850] flex-row rounded-md ">ler</a>
-                            {/* </div> */}
+                      <div className="flex py-3 px-4 flex-col justify-center items-center text-left">
+                        <a href={post.link} className="flex space-x-3 justify-center items-start">
+                          <img className="rounded-md h-18 w-12 sm:w-12 md:w-24 lg:w-16" src={post.thumbnail} />
+                          <div className="text-gray-400 space-y-0 space-x-0 text-xs pb-0">
+                            <p className="normal-case flex font-extrabold flex-nowrap w-full text-white text-xs">{post.title}</p>
+                            <p className="normal-case overflow-hidden font-extralight	h-8 max-w-12 text-gray-100 text-xs">{post.description}</p>
+                            <p className="flex sm:flex md:hidden lg:flex normal-case font-thin text-gray-500 text-xs">CA | Semana #{post.id}</p>
                           </div>
-                          <img className="rounded-md h-18 w-1/3 md:w-1/4" src={post.thumbnail} />
                         </a>
                       </div>
                     </div>
