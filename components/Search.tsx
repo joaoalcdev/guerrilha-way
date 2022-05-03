@@ -3,13 +3,19 @@ import { useState } from 'react';
 
 export default function Search() {
   const [query, setQuery] = useState("");
+  const [hidden, setHidden] = useState(false);
+
   const selectAllText = (event: any) => {
     event.target.select();
   };
+  const onChange = (event: any) => {
+    setQuery(event.target.value);
+  }
+
   return (
     <>
       <div className="block visible relative md:mr-0">
-        <form className="w-full md:w-full" action="/" method="get">
+        <form className="w-full md:w-full">
           <button className="z-14 flex flex-col w-full" type="submit">
             <div className="flex justify-center absolute top-0 pt-[10px] md:pt-[9px] left-0 items-center px-3 pointer-events-none">
               <svg className="flex justify-center items-center w-full h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -32,15 +38,19 @@ export default function Search() {
             border-gray-600 border focus:border focus:border-[#ee2058]
           "
             placeholder="Buscar por..."
-            onFocus={event => setQuery(event.target.value) != undefined ? setQuery(event.target.value) : setQuery(event.target.value)}
+            onFocus={event => setQuery(event.target.value) === setQuery(event.target.value) ? setQuery(event.target.value) : setQuery(event.target.value)}
+            onChange={onChange}
             onClick={selectAllText}
-            // onClick={event => event.target.select(setQuery(event.target.value))}
-            onBlur={event => setQuery(event.target.value) != undefined ? setQuery(event.target.value) : setQuery("")}
-            onChange={event => setQuery(event.target.value)}
+            // onBlur={event => setQuery(event.target.value) === setQuery("") ? setHidden(false) : setHidden(false)}
+            onInput={() => setHidden(true) != setQuery(event.target.value) ? setHidden(true) : setHidden(true)}
+            onPointerEnter={event => setQuery(event.target.value) === setQuery(event.target.value) ? setHidden(true) : setHidden(true)}
+            onPointerLeave={event => setQuery(event.target.value) === setQuery(event.target.value) ? setHidden(true) : setHidden(true)}
           />
         </form>
-        <div className="" id="search-bar">
-          <ul className="z-40 pt-1 px-1 absolute w-full space-y-0 rounded-lg overflow-y-auto md:overflow-y-auto h-60 mt-2">
+        <div className="" id="search-bar" hidden={!hidden}
+          onPointerLeave={event => setQuery(event.target.value) === setQuery("") ? setHidden(true) : setHidden(true)}
+        >
+          <ul className="z-50 pt-1 px-1 absolute w-full space-y-0 rounded-lg overflow-y-auto md:overflow-y-auto h-60">
             {
               Data.filter(post => {
                 if (query === '') {
@@ -54,7 +64,7 @@ export default function Search() {
                   <div className="bg-[#1f1f20] hover:bg-[#101010] duration-300 hover:drop-shadow-[0px_0px_3px_#2f2f2f90] rounded-0 space-y-0">
                     <div className="flex-row flex">
                       <div className="flex py-3 px-4 flex-col justify-center items-center text-left">
-                        <a href={post.link} className="flex space-x-3 justify-center items-start">
+                        <a href={post.link} className="z-50 flex space-x-3 justify-center items-start">
                           <img className="rounded-md h-18 w-12 sm:w-12 md:w-24 lg:w-16" src={post.thumbnail} />
                           <div className="text-gray-400 space-y-0 space-x-0 text-xs pb-0">
                             <p className="normal-case flex font-extrabold flex-nowrap w-full text-white text-xs">{post.title}</p>
