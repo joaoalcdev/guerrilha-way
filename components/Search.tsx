@@ -41,14 +41,14 @@ export default function Search() {
             onFocus={event => setQuery(event.target.value) === setQuery(event.target.value) ? setQuery(event.target.value) : setQuery(event.target.value)}
             onChange={onChange}
             onClick={selectAllText}
-            // onBlur={event => setQuery(event.target.value) === setQuery("") ? setHidden(false) : setHidden(false)}
-            onInput={() => setHidden(true) != setQuery(event.target.value) ? setHidden(true) : setHidden(true)}
-            onPointerEnter={event => setQuery(event.target.value) === setQuery(event.target.value) ? setHidden(true) : setHidden(true)}
-            onPointerLeave={event => setQuery(event.target.value) === setQuery(event.target.value) ? setHidden(true) : setHidden(true)}
+            onBlur={event => setQuery(event.target.value) === setQuery("") ? setHidden(false) : setHidden(false)}
+            // onInput={() => setHidden(true) != setQuery(event.target.value) ? setHidden(true) : setHidden(true)}
+            // onPointerEnter={event => setQuery(event.target.value) === setQuery(event.target.value) ? setHidden(true) : setHidden(true)}
+            // onPointerLeave={event => setQuery(event.target.value) === setQuery(event.target.value) ? setHidden(true) : setHidden(true)}
           />
         </form>
-        <div className="" id="search-bar" hidden={!hidden}
-          onPointerLeave={event => setQuery(event.target.value) === setQuery("") ? setHidden(true) : setHidden(true)}
+        <div className="" id="search-bar" hidden={hidden}
+          // onPointerLeave={event => setQuery(event.target.value) === setQuery("") ? setHidden(true) : setHidden(true)}
         >
           <ul className="z-50 pt-1 px-1 absolute w-full space-y-0 rounded-lg overflow-y-auto md:overflow-y-auto h-60">
             {
