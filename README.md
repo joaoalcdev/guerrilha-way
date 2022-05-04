@@ -78,28 +78,28 @@ A feature consiste em uma ferramenta de buscas com filtros. De acordo com a pala
 - [x] Notificações (criar feature, ideia);
   - [x] Feature de notificações.
 
-        <br>
+        <!-- <br> -->
+- [x] Tecnologias:
+  - [x] ⚛️ [React](https://reactjs.org/) com [NextJS](https://nextjs.org/)
+    - [x] [TypeScript](https://www.typescriptlang.org/docs/);
+    - [x] [React Hooks](https://reactjs.org/docs/hooks-intro.html);
+      - [x] useState && outros;
+      - [x] Arrow Functions;
+      - [x] Array Functions;
+      - [x] SyntheticEvents;
+    - [x] Componentização;
 
-- [x] ⚛️ [React](https://reactjs.org/) com [NextJS](https://nextjs.org/)
-  - [x] [TypeScript](https://www.typescriptlang.org/docs/);
-  - [x] [React Hooks](https://reactjs.org/docs/hooks-intro.html);
-    - [x] useState && outros;
-    - [x] Arrow Functions;
-    - [x] Array Functions;
-    - [x] SyntheticEvents;
-  - [x] Componentização;
+        <!-- <br> -->
 
-        <br>
+  - [x] 🎨 [TailwindCSS](https://tailwindcss.com/)
+    - [x] Flexbox - Grid;
+    - [x] Responsive;
+    - [x] Desktop - Tablet - Mobile's;
 
-- [x] 🎨 [TailwindCSS](https://tailwindcss.com/)
-  - [x] Flexbox - Grid;
-  - [x] Responsive;
-  - [x] Desktop - Tablet - Mobile's;
+        <!-- <br> -->
 
-        <br>
-
-- [x] 🎨 Host
-  - [x] [Vercel](https://vercel.com/dashboard);
+  - [x] 🎨 Host
+    - [x] [Vercel](https://vercel.com/dashboard);
   
       <br>
   <!-- ## 🔨 Architecture and Infrastructure for the Project: -->
