@@ -11,7 +11,7 @@ export default function Header() {
             <div className="flex md:py-0 flex-row w-full justify-start items-center">
               <div className="w-1/2 absolute md:relative md:w-full justify-start flex items-center text-sm rounded-full md:mr-0">
                 <a href="#" className="z-10">
-                  <Image src="/assets/gw-logo.png" width={158} height={38} className="" alt="Guerrilha Way" />
+                  <Image src="/assets/gw-logo.webp" width={158} height={38} className="" alt="Guerrilha Way" />
                 </a>
               </div>
             </div>

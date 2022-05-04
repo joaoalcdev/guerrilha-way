@@ -67,14 +67,19 @@ A feature consiste em uma ferramenta de buscas com filtros. De acordo com a pala
       - [x] Filtro de SEMANAS (Semana referente ao CA, como: 40, 39,38...);
       - [x] Filtro de TÍTULOS (Título referente ao CA);
       - [x] Filtro de DESCRIÇÕES (Descrição referente ao CA);
+
     - [x] Histórico de buscas (criar feature, ideia):
       - [x] Feature para a barra de busca (search bar);
+
 - [x] Perfil de usuário (criar feature, ideia);
   - [x] Status: Em andamento...
   - [x] Feature para melhorar o perfil de usuário.
+
 - [x] Notificações (criar feature, ideia);
   - [x] Feature de notificações.
+
         <br>
+
 - [x] ⚛️ [React](https://reactjs.org/) com [NextJS](https://nextjs.org/)
   - [x] [TypeScript](https://www.typescriptlang.org/docs/);
   - [x] [React Hooks](https://reactjs.org/docs/hooks-intro.html);
@@ -83,14 +88,19 @@ A feature consiste em uma ferramenta de buscas com filtros. De acordo com a pala
     - [x] Array Functions;
     - [x] SyntheticEvents;
   - [x] Componentização;
+
         <br>
+
 - [x] 🎨 [TailwindCSS](https://tailwindcss.com/)
   - [x] Flexbox - Grid;
   - [x] Responsive;
   - [x] Desktop - Tablet - Mobile's;
+
         <br>
+
 - [x] 🎨 Host
   - [x] [Vercel](https://vercel.com/dashboard);
+  
       <br>
   <!-- ## 🔨 Architecture and Infrastructure for the Project: -->
 
