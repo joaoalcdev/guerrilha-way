@@ -22,6 +22,8 @@ export default function CardSection() {
                   </div>
                 </>
               ))}
+              {/* full width banner */}
+              <BannerSection />
               {/* line cards 02 */}
               {Data.slice(7, 8).map((data, index) => (
                 <>

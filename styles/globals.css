@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	scroll-behavior: smooth;
+}
+
 /* 4K - 2560px */
 @media only screen and (max-width: 2560px) {
 	::-webkit-scrollbar-track

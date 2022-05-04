@@ -95,7 +95,7 @@ export default function Search() {
                           <a
                             href={post.link}
                             className="z-50 flex space-x-3 justify-center items-start"
-                            target="_blank"
+                            target="_self"
                             rel="noreferrer noopener"
                             onClick={onSubmit}
                           >
