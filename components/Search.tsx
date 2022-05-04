@@ -66,7 +66,7 @@ export default function Search() {
               text-white placeholder-gray-400 sm:text-sm
               bg-[#131212]
               focus:select-all
-              focus:outline outline-2 outline-offset-0 outline-[#ee2057c7]
+              focus:outline outline-[0.5px] outline-offset-0 outline-[#ee2057c7]
               border-gray-600 border focus:border focus:border-[#ee2058]
             "
             placeholder="Buscar por..."
@@ -83,7 +83,14 @@ export default function Search() {
                 Data.filter(post => {
                   if (query === '') {
                     return false;
-                  } else if (post.title.toLowerCase().includes(query.toLowerCase()) || post.description.toLowerCase().includes(query.toLowerCase()) || (post.id && post.id.toLowerCase().includes(query.toLowerCase())) || (post.date && post.date.toLowerCase().includes(query.toLowerCase())) || (post.link && post.link.toLowerCase().includes(query.toLowerCase()))) {
+                  } else if (
+                    post.title.toLowerCase().includes(query.toLowerCase()) ||
+                    post.description.toLowerCase().includes(query.toLowerCase()) ||
+                    (post.id && post.id.toLowerCase().includes(query.toLowerCase())) ||
+                    (post.date && post.date.toLowerCase().includes(query.toLowerCase())) ||
+                    (post.year && post.year.toLowerCase().includes(query.toLowerCase())) ||
+                    (post.week && post.week.toLowerCase().includes(query.toLowerCase())) ||
+                    (post.link && post.link.toLowerCase().includes(query.toLowerCase()))) {
                     return true;
                   }
                 }).map((post, index) => (

@@ -5,9 +5,9 @@ import NotifyIcon from '../components/icons/Notify';
 export default function Header() {
   return (
     <>
-      <nav className="bg-[#131212] border-gray-200 px-2 sm:px-4 py-8 mb-1 items-center justify-center flex">
+      <nav className="bg-[#131212] border-gray-200 px-2 sm:px-4 py-5 sm:py-2 mb-1 items-center justify-center flex">
         <div className="container flex md:flex-wrap justify-start sm:justify-between md:justify-between items-center px-6 sm:px-0 md:px-0">
-          <div className="py-5 md:py-0 flex flex-col md:flex-row w-full md:w-full items-center justify-center sm:justify-center space-x-0">
+          <div className="py-5 md:py-2 flex flex-col md:flex-row w-full md:w-full items-center justify-center sm:justify-center space-x-0">
             <div className="flex md:py-0 flex-row w-full justify-start items-center">
               <div className="w-1/2 absolute md:relative md:w-full justify-start flex items-center text-sm rounded-full md:mr-0">
                 <a href="#" className="z-10">
@@ -66,12 +66,13 @@ export default function Header() {
                           <p className="text-sm font-medium leading-5 text-gray-900 truncate">ygorgondim@gmail.com</p>
                         </div>
                         <div className="py-1">
-                          <a href="#!" className="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left" role="menuitem" >Configurações da conta</a>
-                          <a href="#!" className="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left" role="menuitem">Suporte</a>
+                          <a href="#!" rel="noreferrer noopener" className="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left hover:bg-gray-100 duration-100" role="menuitem" >Configurações da conta</a>
                           <span role="menuitem" className="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left text-gray-700 cursor-not-allowed opacity-50" aria-disabled="true">Certificados (em breve)</span>
-                          <a href="#!" className="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left" role="menuitem">Lorem ipsum</a></div>
+                          <a href="#!" rel="noreferrer noopener" className="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left hover:bg-gray-100 duration-100" role="menuitem">Suporte</a>
+                          {/* <a href="#!" rel="noreferrer noopener" className="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left hover:bg-gray-100 duration-100" role="menuitem">Lorem ipsum</a> */}
+                        </div>
                         <div className="py-1">
-                          <a href="#!" className="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left" role="menuitem" >Sair</a></div>
+                          <a href="#!" rel="noreferrer noopener" className="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left hover:bg-gray-100 duration-100" role="menuitem" >Sair</a></div>
                       </div>
                     </div>
                   </div>
