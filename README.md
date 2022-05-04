@@ -160,8 +160,10 @@ Este repositório está a licença sob open source com objetivo de contribuir pa
 Credits:
 </p> -->
 
-Coded with 🤍 by, [João Alcântara](https://github.com/https://www.instagram.com/joaoalcantara.dev/) 👋🏻
+Coded by, [João Alcântara](https://github.com/https://www.instagram.com/joaoalcantara.dev/) 👋🏻
 
-UX Prototyped with 💜 by, [Ygor Gondim](https://www.instagram.com/ygoralc/) 👋🏻
+Contributing Analyst by, [Glauber Castro](https://www.instagram.com/glauber.castro_/) 👋🏻
+
+UX Prototyped by, [Ygor Gondim](https://www.instagram.com/ygoralc/) 👋🏻
 
 </div>
