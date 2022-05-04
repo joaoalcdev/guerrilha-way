@@ -19,7 +19,7 @@ export default function Footer() {
               md:justify-start
             ">
               <a href="#" rel="noreferrer noopener" className="text-white text-sm">
-                <Image src="/assets/gw-logo.png" width={158} height={38} />
+                <Image src="/assets/gw-logo.webp" width={158} height={38} />
               </a>
             </h6>
             <div className="flex flex-row space-x-4 pb-8 items-center justify-center md:justify-start md:pl-5">
@@ -56,10 +56,10 @@ export default function Footer() {
             </h6>
             <p className="flex items-center justify-center md:justify-start mb-4 gap-2">
               <a href="https://apps.apple.com/br/app/guerrilha-way/id1542027387" className="text-white text-sm">
-                <Image src="/assets/apple.png" width={180} height={50} />
+                <Image src="/assets/apple.webp" width={180} height={50} />
               </a>
               <a href="https://play.google.com/store/apps/details?id=com.wrl.guerrilha_way" className="text-white text-sm">
-                <Image src="/assets/google.png" width={180} height={50} />
+                <Image src="/assets/google.webp" width={180} height={50} />
               </a>
             </p>
           </div>

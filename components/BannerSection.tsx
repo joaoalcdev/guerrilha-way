@@ -7,7 +7,7 @@ export default function BannerSection() {
           target="_blank"
           rel="noreferrer noopener">
           <Image
-            src="/assets/thumbnail-section.jpeg"
+            src="/assets/cards/thumbnail-section.webp"
             width={1200}
             height={200}
             className="w-full px-0 mx-0 rounded-sm drop-shadow-[0px_0px_10px_rgba(0,0,0,0.25)]" />
