@@ -4,7 +4,7 @@
     <p text-align="" style="color: #ee2058">Guerrilha Way - Proposta</p> 
     <p align="center">
       <img 
-        src="https://img.shields.io/badge/GW-Test%20Email-ee2058"
+        src="https://img.shields.io/badge/GW-Tool%20Proposal-ee2058"
         alt="Gw" 
       />
       <img 
@@ -15,16 +15,17 @@
   </h1>
 </div>
 
-## 📷 Demonstration:
+## 🖼 Demonstração:
 
 <div align="center">
   <h1 align="center">
 
-[Clique aqui](https://guerrilha-way.vercel.app/) para ver a demonstração do projeto.
+[Clique aqui](https://guerrilha-way.vercel.app/) para utilizar o projeto com a feature.
 
 <img 
-    src="./assets/cover.gif?style=flat"
+    src="./git-assets/cover.webp?style=flat"
     alt="Cover Project" 
+    style="border: solid 10px #ee2058"
   />
 
   </h1>
@@ -32,7 +33,7 @@
 
 <div align="center" style="border: solid 10px #000340">
   <h1>
-    <p text-align="center">DESCRIÇÃO do projeto</p> 
+    <p text-align="center">DESCRIÇÃO DO PROJETO</p> 
   </h1>
 </div>
 
@@ -47,9 +48,11 @@
 
 <br>
 
-## 💻 Project:
+## 📜 Projeto:
 
-Projeto desenvolvido com o objetivo de trazer novas funcionalidades à aplicação web do programa Guerrilha Way.
+Projeto desenvolvido com o objetivo de trazer novas funcionalidades à aplicação web/mobile do programa Guerrilha Way.
+
+A feature consiste em uma ferramenta de buscas com filtros. De acordo com a palavra digitada, se houver algum conteúdo que tenha algum título, data, semana referente ao conteúdo ou descrição, encontrará e será filtrado para melhor performance e usabilidade da ferramenta, assim, exibindo o conteúdo para o usuário. Se não houver nada, ela simplesmente não mostrará nenhum conteúdo, pois não foi encontrado nenhum conteúdo com aquelas especificações digitadas.
 
 <br>
 
@@ -58,19 +61,36 @@ Projeto desenvolvido com o objetivo de trazer novas funcionalidades à aplicaç�
 <!-- - [x] 🗂 Assets Project: -->
 
 - [x] 📬 Features:
-  - [x] Barra de pesquisa;
-    - [x] Filtros;
-  - [x] Ideia para notificações (incompleto);
-  - [x] Perfil de usuário (incompleto);
+  - [x] Barra de pesquisa (nova feature, completa);
+    - [x] Filtros:
+      - [x] Filtro de DATAS (dias, meses, anos ou data específica como: 24/04/2022);
+      - [x] Filtro de SEMANAS (Semana referente ao CA, como: 40, 39,38...);
+      - [x] Filtro de TÍTULOS (Título referente ao CA);
+      - [x] Filtro de DESCRIÇÕES (Descrição referente ao CA);
+    - [x] Histórico de buscas (criar feature, ideia):
+      - [x] Feature para a barra de busca (search bar);
+- [x] Perfil de usuário (criar feature, ideia);
+  - [x] Status: Em andamento...
+  - [x] Feature para melhorar o perfil de usuário.
+- [x] Notificações (criar feature, ideia);
+  - [x] Feature de notificações.
         <br>
-- [x] ⚙️ React
-  - [x] Estrutura;
-  - [x] Components;
+- [x] ⚛️ [React](https://reactjs.org/) com [NextJS](https://nextjs.org/)
+  - [x] [TypeScript](https://www.typescriptlang.org/docs/);
+  - [x] [React Hooks](https://reactjs.org/docs/hooks-intro.html);
+    - [x] useState && outros;
+    - [x] Arrow Functions;
+    - [x] Array Functions;
+    - [x] SyntheticEvents;
+  - [x] Componentização;
         <br>
-- [x] 🎨 TailwindCSS
+- [x] 🎨 [TailwindCSS](https://tailwindcss.com/)
   - [x] Flexbox - Grid;
   - [x] Responsive;
   - [x] Desktop - Tablet - Mobile's;
+        <br>
+- [x] 🎨 Host
+  - [x] [Vercel](https://vercel.com/dashboard);
       <br>
   <!-- ## 🔨 Architecture and Infrastructure for the Project: -->
 
@@ -80,10 +100,12 @@ Projeto desenvolvido com o objetivo de trazer novas funcionalidades à aplicaç�
   <!-- </h1>
 </div> -->
 
-<!-- ## 🔺 IMPORTANT NOTES: -->
+## 🔺 OBSERVAÇÕES:
 
-<!-- [1] Some assets may be at a slightly lower resolution due to not having editable creatives. <br> -->
-<!-- [2] Dimensions, sizes and styles of mobile's resolutions were "improvised" as there was no dynamic prototype to go on explaining the specs. -->
+[1] Algumas imagens estão com baixa qualidade, pois não tínhamos os assets originais e utilizamos diretamente do [GW](https://app.guerrilhaway.com.br/). Vale lembrar que toda a estrutura é semelhante ao GW, fiz com o intuito de parecer a plataforma do [GW](https://app.guerrilhaway.com.br/) para demonstração da ferramenta criada.<br>
+[2] Todos os links dos CA's levam diretamente para o [Guerrilha Way](https://app.guerrilhaway.com.br/) (é necessário estar logado álguma conta no GW para acessar diretamente). <br>
+
+<!-- [4] <br> -->
 
 <br>
 
@@ -145,7 +167,11 @@ npm init
 
 ## 📄 License
 
-This repository is open of license for exposure of the practical test for a vacancy at USEND. See the file [LICENSE](./LICENSE) for more details.
+<p align="justify">
+
+Este repositório está a licença sob open source com objetivo de contribuir para o programa Guerrilha Way respeitando os direitos e originalidade do programa. Veja o arquivo de [LICENSE](./LICENSE) para mais detalhes.
+
+</p>
 
 <br />
 
@@ -153,6 +179,12 @@ This repository is open of license for exposure of the practical test for a vaca
 
 <div align="center">
 
-Made with 🤍 by [João Alcântara](https://github.com/joaoalcdev) 👋🏻
+<!-- <p align="left">
+Credits:
+</p> -->
+
+Coded with 🤍 by, [João Alcântara](https://github.com/https://www.instagram.com/joaoalcantara.dev/) 👋🏻
+
+UX Prototyped with 💜 by, [Ygor Gondim](https://www.instagram.com/ygoralc/) 👋🏻
 
 </div>
