@@ -58,7 +58,7 @@ A feature consiste em uma ferramenta de buscas com filtros. De acordo com a pala
 
 ## ✨ Tecnologias && Features:
 
-<!-- - [x] 🗂 Assets Project: -->
+
 
 - [x] 📬 Features:
   - [x] Barra de pesquisa (nova feature, completa);
@@ -78,7 +78,7 @@ A feature consiste em uma ferramenta de buscas com filtros. De acordo com a pala
 - [x] Notificações (criar feature, ideia);
   - [x] Feature de notificações.
 
-        <!-- <br> -->
+
 - [x] Tecnologias:
   - [x] ⚛️ [React](https://reactjs.org/) com [NextJS](https://nextjs.org/)
     - [x] [TypeScript](https://www.typescriptlang.org/docs/);
@@ -89,33 +89,24 @@ A feature consiste em uma ferramenta de buscas com filtros. De acordo com a pala
       - [x] SyntheticEvents;
     - [x] Componentização;
 
-        <!-- <br> -->
+
 
   - [x] 🎨 [TailwindCSS](https://tailwindcss.com/)
     - [x] Flexbox - Grid;
     - [x] Responsive;
     - [x] Desktop - Tablet - Mobile's;
 
-        <!-- <br> -->
+
 
   - [x] 🎨 Host
     - [x] [Vercel](https://vercel.com/dashboard);
   
-      <br>
-  <!-- ## 🔨 Architecture and Infrastructure for the Project: -->
-
-<!-- - Architecture:
-  <div align="left">
-  <h1 align="left"> -->
-  <!-- </h1>
-</div> -->
 
 ## 🔺 OBSERVAÇÕES:
 
 [1] Algumas imagens estão com baixa qualidade, pois não tínhamos os assets originais e utilizamos diretamente do [GW](https://app.guerrilhaway.com.br/). Vale lembrar que toda a estrutura é semelhante ao GW, fiz com o intuito de parecer a plataforma do [GW](https://app.guerrilhaway.com.br/) para demonstração da ferramenta criada.<br>
 [2] Todos os links dos CA's levam diretamente para o [Guerrilha Way](https://app.guerrilhaway.com.br/) (é necessário estar logado álguma conta no GW para acessar diretamente). <br>
 
-<!-- [4] <br> -->
 
 <br>
 
@@ -149,31 +140,7 @@ https://localhost:3000
 
 <br />
 
-<!-- **Or click "Use this template" at the top of the repository to use:** -->
 
-<div align="left">
-  <h1 align="left">
-    <!-- <img 
-      src="./assets/cover-click-this-template.png?style=flat"
-      alt="Cover Project" 
-    /> -->
-  </h1>
-</div>
-
-<!-- Use **yarn** or **npm install** to install project dependencies.
-Then start the project.
-
-After installing the dependencies, use
-
-```cl
-yarn start or yarn dev
-```
-
-or
-
-```cl
-npm init
-``` -->
 
 ## 📄 License
 
